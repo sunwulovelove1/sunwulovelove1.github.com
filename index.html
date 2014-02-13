@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   <title>M_许洛</title>
-  <meta name="author" content="Sunwu">
+  <meta name="author" content="Sunwu:junshuaicn@163.com">
 
   
   <meta name="description" content="On the Way">
@@ -29,6 +29,118 @@
   </ul>
 </nav></header>
   <div id="content" class="inner">
+  <article class="post">
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2014/02/13/code/">html5</a></h1>
+  
+
+    <time datetime="2014-02-13T13:15:11.000Z">
+  <span class="day">13</span><span class="month">2月</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>今天写错了一个程序</p>
+<figure class="highlight lang-Java"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td><td class="code"><pre><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JsonTest</span> {</span>
+    <span class="comment">//其他方法省略</span>
+    <span class="keyword">public</span> <span class="keyword">void</span> Call(){
+    	JsonTest s1=<span class="keyword">this</span>;
+    	JsonTest s2=<span class="keyword">this</span>;
+    	System.out.println(<span class="string">"start"</span>);
+    	<span class="keyword">synchronized</span>(s1){
+    		<span class="keyword">try</span> {
+				s2.wait();
+				System.out.println(<span class="string">"s2 wait"</span>);
+			} <span class="keyword">catch</span> (InterruptedException e) {
+				System.out.println(<span class="string">"INTERRUPTED"</span>);
+			} <span class="keyword">catch</span>(Exception e){
+				System.out.println(<span class="string">"EXCEPTION"</span>);
+			}
+    		<span class="keyword">finally</span>{
+    			System.out.println(<span class="string">"DONE"</span>);
+    		}
+    		System.out.println(<span class="string">"Done All"</span>);
+    	}
+    } 
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(String[] args) {
+        <span class="comment">// TODO Auto-generated method stub </span>
+        JsonTest s=<span class="keyword">new</span> JsonTest(); 
+        s.Call();        
+    }
+}
+</pre></td></tr></table></figure>
+
+<p>自己运行吧</p>
+
+    
+    
+    <footer class="meta">
+      
+      
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2014/02/11/plan2oneYear/">Plan To One Year</a></h1>
+  
+
+    <time datetime="2014-02-11T15:17:36.000Z">
+  <span class="day">11</span><span class="month">2月</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p><code>没什么可说的，谢谢计划吧！</code><br>
+    
+    
+    <footer class="meta">
+      
+      
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
   <article class="post">
   
   <header>
@@ -77,6 +189,33 @@
 <pre><code>    现在大多跨平台的数据交互格式：XML<span class="regexp">/JSON/</span>PB
     如果不压缩的话，PB 还是很有优势的。</code></pre>
 <p>
+    
+    
+    <footer class="meta">
+      
+      
+      
+    </footer>
+    
+  </div>
+  
+</article>
+
+  <article class="post">
+  
+  <header>
+    
+  
+    <h1 class="title"><a href="/2013/12/23/那些忘却的纪念/">那些忘却的纪念</a></h1>
+  
+
+    <time datetime="2013-12-23T15:26:40.000Z">
+  <span class="day">23</span><span class="month">12月</span>
+</time>
+  </header>
+  <div class="entry-content">
+    
+      <p>凡此种种，皆为往事，勿以为例。<br>
     
     
     <footer class="meta">
@@ -163,7 +302,7 @@
 </div>
 <p>
   
-  &copy; 2014 Sunwu
+  &copy; 2014 Sunwu:junshuaicn@163.com
   
 </p>
 <div class="clearfix"></div></footer>
